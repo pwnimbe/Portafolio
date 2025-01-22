@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Homepage - Ejemplos de Columnas con Colores y Textos</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .col-bg-1 { background-color: #f8d7da; }
+    .col-bg-2 { background-color: #d4edda; }
+    .col-bg-3 { background-color: #cce5ff; }
+    .col-bg-4 { background-color: #fff3cd; }
+    .col-bg-5 { background-color: #f8f9fa; }
+  </style>
+</head>
+<body>
+     <!-- Bootstrap JS (opcional para interactividad avanzada) -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+     <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
+      <div class="container px-5">
+          <a class="navbar-brand" href="index.html"><span class="fw-bolder text-primary">Portafolio</span></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
+                  <li class="nav-item"><a class="nav-link" href="../startbootstrap-personal-gh-pages/index.html">Inicio</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../startbootstrap-personal-gh-pages/projects.html">Actividades</a></li>
+              </ul>
+          </div>
+      </div>
+    </nav>
+    <!-- barra de navegacion-->
+    <div class="container mt-5">
+      <div class="row justify-content-center">
+          <div class="col-md-6">
+              <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Search">
+                  <button class="btn btn-primary" type="submit">Buscar</button>
+              </form>
+          </div>
+      </div>
+    </div>
+  <div class="container mt-5">
+    
+    <!-- 1. Tres columnas iguales -->
+    <div class="row mb-4">
+      <div class="col-md-4 col-bg-1">
+        <div class="p-3">
+          <h4 class="text-center">Columna 1</h4>
+          <p class="text-center">Bootstrap ofrece una estructura de grid muy flexible, ideal para construir diseños responsivos.</p>
+        </div>
+      </div>
+      <div class="col-md-4 col-bg-2">
+        <div class="p-3">
+          <h4 class="text-center">Columna 2</h4>
+          <p class="text-center">Puedes ajustar el tamaño de las columnas para diferentes tamaños de pantalla.</p>
+        </div>
+      </div>
+      <div class="col-md-4 col-bg-3">
+        <div class="p-3">
+          <h4 class="text-center">Columna 3</h4>
+          <p class="text-center">Usa las clases de Bootstrap como <code>.col-md-4</code> para definir el tamaño de las columnas.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2. Columnas diferentes (8 y 4 md) -->
+    <div class="row mb-4">
+      <div class="col-md-8 col-bg-4">
+        <div class="p-3">
+          <h4 class="text-center">Columna 8</h4>
+          <p class="text-center">Las columnas se pueden personalizar para que ocupen el espacio necesario en tu diseño.</p>
+        </div>
+      </div>
+      <div class="col-md-4 col-bg-5">
+        <div class="p-3">
+          <h4 class="text-center">Columna 4</h4>
+          <p class="text-center">Aquí puedes ver cómo las columnas de diferentes tamaños se ajustan en pantallas medianas.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3. Columnas diferentes (8 y 4 md) con columnas anidadas -->
+    <div class="row mb-4">
+      <div class="col-md-8 col-bg-1">
+        <div class="p-3">
+          <h4 class="text-center">Columna 8</h4>
+          <p class="text-center">Esta columna tiene subcolumnas dentro de ella:</p>
+          <div class="row">
+            <div class="col-md-6 col-bg-2">
+              <div class="p-3">
+                <h5 class="text-center">Subcolumna 1</h5>
+                <p class="text-center">Esta subcolumna ocupa la mitad del espacio dentro de la columna principal.</p>
+              </div>
+            </div>
+            <div class="col-md-6 col-bg-3">
+              <div class="p-3">
+                <h5 class="text-center">Subcolumna 2</h5>
+                <p class="text-center">Bootstrap facilita la creación de subcolumnas dentro de una columna principal.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-bg-4">
+        <div class="p-3">
+          <h4 class="text-center">Columna 4</h4>
+          <p class="text-center">Este es otro ejemplo de cómo dividir las columnas según el tamaño de la pantalla.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 4. Mezcla de columnas (sm, md, lg) -->
+    <div class="row mb-4">
+      <div class="col-sm-12 col-md-6 col-lg-4 col-bg-5">
+        <div class="p-3">
+          <h4 class="text-center">Columna 1</h4>
+          <p class="text-center">Con las clases de <code>.col-sm-12</code>, <code>.col-md-6</code> y <code>.col-lg-4</code>, la columna se ajusta automáticamente.</p>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-4 col-bg-1">
+        <div class="p-3">
+          <h4 class="text-center">Columna 2</h4>
+          <p class="text-center">El diseño es completamente responsivo gracias a las clases de Bootstrap.</p>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-4 col-bg-2">
+        <div class="p-3">
+          <h4 class="text-center">Columna 3</h4>
+          <p class="text-center">Cada columna ocupa el espacio correspondiente en diferentes tamaños de pantalla.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 5. Mezcla de columnas (sm, lg) -->
+    <div class="row">
+      <div class="col-sm-12 col-lg-6 col-bg-3">
+        <div class="p-3">
+          <h4 class="text-center">Columna 1</h4>
+          <p class="text-center">En pantallas pequeñas, la columna ocupa todo el ancho, y en pantallas grandes, solo la mitad.</p>
+        </div>
+      </div>
+      <div class="col-sm-12 col-lg-6 col-bg-4">
+        <div class="p-3">
+          <h4 class="text-center">Columna 2</h4>
+          <p class="text-center">Puedes personalizar las columnas para que se adapten a diferentes tamaños de pantalla.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
